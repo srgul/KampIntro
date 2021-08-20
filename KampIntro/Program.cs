@@ -6,7 +6,28 @@ namespace KampIntro
     {
         static void Main(string[] args)
         {
-            string 
+
+            string[] kurslar = new string[]
+            {
+               "deneme",
+               "deneme2",
+               "deneme3"
+            };
+
+            Console.WriteLine("for bitti");
+
+            for (int i = 0; i < kurslar.Length; i++)
+            {
+                Console.WriteLine(kurslar[i]);
+            }
+
+            foreach (string kurs in kurslar)
+            {
+                Console.WriteLine(kurs);
+            }
+
+            Console.WriteLine("sayfa sonu");
         }
+
     }
 }
